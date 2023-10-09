@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #fff;
+  --dark: #474747;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  border: 10px solid #000;
+}
+
+.container {
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 999;
+  width: 100%;
+  height: 10%;
+}
+
+.left-menu .menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem;
+}
+
+.left-menu .menu li {
+  margin-left: 0rem;
+  color: var(--primary);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1.2rem;
+  transition: all 0.5s linear;
+}
+
+.left-menu .menu li:hover {
+  color: var(--dark);
+}
+
+.left-menu .menu li:first-child {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+.right-menu .menu {
+  display: flex;
+  list-style: none;
+  margin: 1rem;
+  margin-left: 40rem;
+  font-weight: 500;
+}
+
+.right-menu .menu li {
+  margin-left: 0.5rem;
+  color: var(--primary);
+  font-weight: 500;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.right-menu .menu li sup {
+  background: var(--dark);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.right-menu .menu li sup:hover {
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.right-menu .menu li:hover {
+  color: var(--dark);
+}
+
+/* hero */
+
+.hero {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  margin: 10rem 5rem;
+}
+
+.hero h2 {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.hero h1 {
+  color: var(--primary);
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hero .btn {
+  margin-top: 2rem;
+  width: 17%;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.hero i {
+  color: #000;
+  transition: all 0.5s linear;
+}
+
+.hero i:hover {
+  transform: rotate(90deg);
+}
